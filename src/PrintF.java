@@ -1,11 +1,15 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Arrays;
 import java.util.Scanner;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class PrintF {
 
 	public static void main(String[] args) throws FileNotFoundException {
-		// TODO Auto-generated method stub
+				
+
 		File fichierTxt = new File("C:\\Users\\Simplon\\osef.txt");
 		
 		Scanner scan = new Scanner(fichierTxt);
@@ -20,12 +24,12 @@ public class PrintF {
 			System.out.printf("%s\t", reponse);
 			count ++;
 				} else {
-					System.out.println("\r");
+					System.out.println("\r");					
 					count = 0;
 				}
 		}
 		scan.close();
-	
+			
 
 	}
 
